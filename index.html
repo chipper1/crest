@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.27.0">
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "";
+</script>
+
+  <meta id="repository-name" content="github.com/mamantoha/crest">
+  <title>README - github.com/mamantoha/crest</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent " data-id="github.com/mamantoha/crest/Crest" data-name="crest">
+      <a href="Crest.html">Crest</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/mamantoha/crest/Crest/CommonLogger" data-name="crest::commonlogger">
+      <a href="Crest/CommonLogger.html">CommonLogger</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/mamantoha/crest/Crest/Curlify" data-name="crest::curlify">
+      <a href="Crest/Curlify.html">Curlify</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/mamantoha/crest/Crest/DataForm" data-name="crest::dataform(t)">
+      <a href="Crest/DataForm.html">DataForm</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/mamantoha/crest/Crest/Form" data-name="crest::form(t)">
+      <a href="Crest/Form.html">Form</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/mamantoha/crest/Crest/Logger" data-name="crest::logger">
+      <a href="Crest/Logger.html">Logger</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/mamantoha/crest/Crest/Params" data-name="crest::params">
+      <a href="Crest/Params.html">Params</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/mamantoha/crest/Crest/Redirector" data-name="crest::redirector">
+      <a href="Crest/Redirector.html">Redirector</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/mamantoha/crest/Crest/Request" data-name="crest::request">
+      <a href="Crest/Request.html">Request</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/mamantoha/crest/Crest/RequestFailed" data-name="crest::requestfailed">
+      <a href="Crest/RequestFailed.html">RequestFailed</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/mamantoha/crest/Crest/Resource" data-name="crest::resource">
+      <a href="Crest/Resource.html">Resource</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/mamantoha/crest/Crest/Response" data-name="crest::response">
+      <a href="Crest/Response.html">Response</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/mamantoha/crest/Crest/Response/Helpers" data-name="crest::response::helpers">
+      <a href="Crest/Response/Helpers.html">Helpers</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/mamantoha/crest/Crest/TextValue" data-name="crest::textvalue">
+      <a href="Crest/TextValue.html">TextValue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/mamantoha/crest/Crest/UrlencodedForm" data-name="crest::urlencodedform(t)">
+      <a href="Crest/UrlencodedForm.html">UrlencodedForm</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/mamantoha/crest/Crest/Utils" data-name="crest::utils">
+      <a href="Crest/Utils.html">Utils</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/mamantoha/crest/HTTP" data-name="http">
+      <a href="HTTP.html">HTTP</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/mamantoha/crest/HTTP/Client" data-name="http::client">
+      <a href="HTTP/Client.html">Client</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1>&lt;img src="https://stars.medv.io/mamantoha/crest.svg" align="right"/></h1>
+
+<p>&lt;p align="left">&lt;img src="https://raw.githubusercontent.com/mamantoha/crest/master/logo/logotype_horizontal.png" alt="crest" height="150px">&lt;/p></p>
+
+<p><a href="https://app.codacy.com/app/mamantoha/crest?utm_source=github.com&utm_medium=referral&utm_content=mamantoha/crest&utm_campaign=Badge_Grade_Dashboard" target="_blank"><img src="https://api.codacy.com/project/badge/Grade/16e439ef2706472988306ef13da91a51" alt="Codacy Badge"/></a>
+<a href="https://travis-ci.org/mamantoha/crest" target="_blank"><img src="https://travis-ci.org/mamantoha/crest.svg?branch=master" alt="Build Status"/></a>
+<a href="https://github.com/mamantoha/crest/releases" target="_blank"><img src="https://img.shields.io/github/release/mamantoha/crest.svg" alt="GitHub release"/></a>
+<a href="https://github.com/mamantoha/crest/pulse" target="_blank"><img src="https://img.shields.io/github/commits-since/mamantoha/crest/latest.svg" alt="Commits Since Last Release"/></a>
+<a href="https://mamantoha.github.io/crest/" target="_blank"><img src="https://img.shields.io/badge/docs-available-brightgreen.svg" alt="Docs"/></a>
+<a href="https://github.com/mamantoha/crest/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/mamantoha/crest.svg" alt="License"/></a></p>
+
+<p>Simple HTTP and REST client for Crystal, inspired by the Ruby's RestClient gem.</p>
+
+<h2>Installation</h2>
+
+<p>Add this to your application's <code>shard.yml</code>:</p>
+
+<pre><code class="language-yaml">dependencies:
+  crest:
+    github: mamantoha/crest</code></pre>
+
+<h2>Usage</h2>
+
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;crest&quot;</span></code></pre>
+
+<p>Basic usage:</p>
+
+<pre><code class="language-crystal"><span class="t">Crest</span>.get(
+  <span class="s">&quot;http://httpbin.org/get&quot;</span>,
+  params: {<span class="n">:lang</span> => <span class="s">&quot;en&quot;</span>}
+)
+<span class="c"># curl -L &quot;http://httpbin.org/get?lang=en&quot;</span>
+
+<span class="t">Crest</span>.post(
+  <span class="s">&quot;http://httpbin.org/post&quot;</span>,
+  form: {<span class="n">:age</span> => <span class="n">27</span>, <span class="n">:name</span> => {<span class="n">:first</span> => <span class="s">&quot;Kurt&quot;</span>, <span class="n">:last</span> => <span class="s">&quot;Cobain&quot;</span>}}
+)
+<span class="c"># curl -L --data &quot;age=27&amp;name[first]=Kurt&amp;name[last]=Cobain&quot; -X POST &quot;http://httpbin.org/post&quot;</span></code></pre>
+
+<h3>Request</h3>
+
+<p><code><a href="Crest/Request.html">Crest::Request</a></code> accept next parameters:</p>
+
+<p>Mandatory parameters:</p>
+
+<ul><li><code>:method</code> - HTTP method (<code>:get</code>. <code>:post</code>, <code>:put</code>, <code>:patch</code>,  <code>:delete</code>, <code>:options</code>)</li><li><code>:url</code> - URL (e.g.: <code>http://httpbin.org/ip</code>)</li></ul>
+
+<p>Optional parameters:</p>
+
+<ul><li><code>:headers</code> -  a hash containing the request headers</li><li><code>:cookies</code> -  a hash containing the request cookies</li><li><code>:form</code> -  a hash containing form params</li><li><code>:params</code> -  a hash that represent query-string separated from the preceding part by a question mark (<code>?</code>) a sequence of attribute–value pairs separated by a delimiter (<code>&</code>)</li><li><code>:user</code> and <code>:password</code> -  for Basic Authentication</li><li><code>:tls</code> - client certificates, you can pass in a custom <code>OpenSSL::SSL::Context::Client</code> (default to <code>nil</code>)</li><li><code>:p_addr</code>, <code>:p_port</code>, <code>:p_user</code>, and <code>:p_pass</code> - specify a per-request proxy by passing these parameters</li><li><code>:max_redirects</code> -  maximum number of redirections (default to 10)</li><li><code>:logging</code> -  enable logging (default to <code>false</code>)</li><li><code>:logger</code> -  set logger (default to <code><a href="Crest/CommonLogger.html">Crest::CommonLogger</a></code>)</li><li><code>:handle_errors</code> - error handling (default to <code>true</code>)</li><li><code>:http_client</code> - instance of <code><a href="HTTP/Client.html">HTTP::Client</a></code></li></ul>
+
+<p>More detailed examples:</p>
+
+<pre><code class="language-crystal">request <span class="o">=</span> <span class="t">Crest</span><span class="t">::</span><span class="t">Request</span>.<span class="k">new</span>(<span class="n">:post</span>,
+  <span class="s">&quot;http://httpbin.org/post&quot;</span>,
+  headers: {<span class="s">&quot;Content-Type&quot;</span> => <span class="s">&quot;application/json&quot;</span>},
+  form: {<span class="n">:width</span> => <span class="n">640</span>, <span class="s">&quot;height&quot;</span> => <span class="s">&quot;480&quot;</span>}
+)
+request.execute
+<span class="c"># curl -L --data &quot;width=640&amp;height=480&quot; --header &quot;Content-Type: application/json&quot; -X POST &quot;http://httpbin.org/post&quot;</span></code></pre>
+
+<pre><code class="language-crystal"><span class="t">Crest</span><span class="t">::</span><span class="t">Request</span>.execute(<span class="n">:get</span>,
+  <span class="s">&quot;http://httpbin.org/get&quot;</span>,
+  params: {<span class="n">:width</span> => <span class="n">640</span>, <span class="s">&quot;height&quot;</span> => <span class="s">&quot;480&quot;</span>},
+  headers: {<span class="s">&quot;Content-Type&quot;</span> => <span class="s">&quot;application/json&quot;</span>})
+)
+<span class="c"># curl -L --header &quot;Content-Type: application/json&quot; &quot;http://httpbin.org/get?width=640&amp;height=480&quot;</span></code></pre>
+
+<pre><code class="language-crystal"><span class="t">Crest</span><span class="t">::</span><span class="t">Request</span>.get(
+  <span class="s">&quot;http://httpbin.org/get&quot;</span>,
+  p_addr: <span class="s">&quot;127.0.0.1&quot;</span>,
+  p_port: <span class="n">3128</span>,
+  p_user: <span class="s">&quot;admin&quot;</span>,
+  p_pass: <span class="s">&quot;1234&quot;</span>
+)
+<span class="c"># curl -L --proxy http://127.0.0.1:3128 --proxy-user admin:1234 &quot;http://httpbin.org/get&quot;</span></code></pre>
+
+<p>A block can be passed to the <code><a href="Crest/Request.html">Crest::Request</a></code> initializer.</p>
+
+<p>This block will then be called with the <code><a href="Crest/Request.html">Crest::Request</a></code>.</p>
+
+<pre><code class="language-crystal">request <span class="o">=</span> <span class="t">Crest</span><span class="t">::</span><span class="t">Request</span>.<span class="k">new</span>(<span class="n">:get</span>, <span class="s">&quot;http://httpbin.org/headers&quot;</span>) <span class="k">do</span> <span class="o">|</span>request<span class="o">|</span>
+  request.headers.add(<span class="s">&quot;foo&quot;</span>, <span class="s">&quot;bar&quot;</span>)
+<span class="k">end</span>
+
+request.execute
+<span class="c"># curl -L --header &quot;foo: bar&quot; http://httpbin.org/headers</span></code></pre>
+
+<h3>Resource</h3>
+
+<p>A <code><a href="Crest/Resource.html">Crest::Resource</a></code> class can be instantiated for access to a RESTful resource,
+including authentication, proxy and logging.</p>
+
+<p>Additionally, you can set default <code>params</code> and <code>headers</code> separately.
+So can use <code><a href="Crest/Resource.html">Crest::Resource</a></code> to share common <code>headers</code> and <code>params</code>.</p>
+
+<p>The final <code>headers</code> and <code>params</code> consist of:</p>
+
+<ul><li>default headers from initializer</li><li>headers provided in call method (<code>get</code>, <code>post</code>, etc)</li></ul>
+
+<p>This is especially useful if you wish to define your site in one place and
+call it in multiple locations.</p>
+
+<pre><code class="language-crystal">resource <span class="o">=</span> <span class="t">Crest</span><span class="t">::</span><span class="t">Resource</span>.<span class="k">new</span>(
+  <span class="s">&quot;http://httpbin.org&quot;</span>,
+  params: {<span class="s">&quot;key&quot;</span> => <span class="s">&quot;value&quot;</span>},
+  headers: {<span class="s">&quot;Content-Type&quot;</span> => <span class="s">&quot;application/json&quot;</span>}
+)
+
+resource[<span class="s">&quot;/get&quot;</span>].get(
+  headers: {<span class="s">&quot;Auth-Token&quot;</span> => <span class="s">&quot;secret&quot;</span>}
+)
+
+resource[<span class="s">&quot;/post&quot;</span>].post(
+  form: {<span class="n">:height</span> => <span class="n">100</span>, <span class="s">&quot;width&quot;</span> => <span class="s">&quot;100&quot;</span>},
+  params: {<span class="n">:secret</span> => <span class="s">&quot;secret&quot;</span>}
+)</code></pre>
+
+<p>Use the <code>[]</code> syntax to allocate subresources:</p>
+
+<pre><code class="language-crystal">site <span class="o">=</span> <span class="t">Crest</span><span class="t">::</span><span class="t">Resource</span>.<span class="k">new</span>(<span class="s">&quot;http://httpbin.org&quot;</span>)
+
+site[<span class="s">&quot;/post&quot;</span>].post(form: {<span class="n">:param1</span> => <span class="s">&quot;value1&quot;</span>, <span class="n">:param2</span> => <span class="s">&quot;value2&quot;</span>})
+<span class="c"># curl -L --data &quot;param1=value1&amp;param2=value2&quot; -X POST http://httpbin.org/post</span></code></pre>
+
+<p>You can pass <code>suburl</code> through <code>Request#http_verb</code> methods:</p>
+
+<pre><code class="language-crystal">site <span class="o">=</span> <span class="t">Crest</span><span class="t">::</span><span class="t">Resource</span>.<span class="k">new</span>(<span class="s">&quot;http://httpbin.org&quot;</span>)
+
+site.post(<span class="s">&quot;/post&quot;</span>, form: {<span class="n">:param1</span> => <span class="s">&quot;value1&quot;</span>, <span class="n">:param2</span> => <span class="s">&quot;value2&quot;</span>})
+<span class="c"># curl -L --data &quot;param1=value1&amp;param2=value2&quot; -X POST http://httpbin.org/post</span>
+
+site.get(<span class="s">&quot;/get&quot;</span>, params: {<span class="n">:status</span> => <span class="s">&quot;active&quot;</span>})
+<span class="c"># curl -L http://httpbin.org/get?status=active</span></code></pre>
+
+<p>A block can be passed to the <code><a href="Crest/Resource.html">Crest::Resource</a></code> instance.</p>
+
+<p>This block will then be called with the <code><a href="Crest/Resource.html">Crest::Resource</a></code>.</p>
+
+<pre><code class="language-crystal">resource <span class="o">=</span> <span class="t">Crest</span><span class="t">::</span><span class="t">Resource</span>.<span class="k">new</span>(<span class="s">&quot;http://httpbin.org&quot;</span>) <span class="k">do</span> <span class="o">|</span>resource<span class="o">|</span>
+  resource.headers.merge!({<span class="s">&quot;foo&quot;</span> => <span class="s">&quot;bar&quot;</span>})
+<span class="k">end</span>
+
+resource[<span class="s">&quot;/headers&quot;</span>].get</code></pre>
+
+<p>With HTTP basic authentication:</p>
+
+<pre><code class="language-crystal">resource <span class="o">=</span> <span class="t">Crest</span><span class="t">::</span><span class="t">Resource</span>.<span class="k">new</span>(
+  <span class="s">&quot;http://httpbin.org/basic-auth/user/passwd&quot;</span>,
+  user: <span class="s">&quot;user&quot;</span>,
+  password: <span class="s">&quot;passwd&quot;</span>
+)</code></pre>
+
+<p>With Proxy authentication:</p>
+
+<pre><code class="language-crystal">resource <span class="o">=</span> <span class="t">Crest</span><span class="t">::</span><span class="t">Resource</span>.<span class="k">new</span>(
+  <span class="s">&quot;http://httpbin.org/get&quot;</span>,
+  p_host: <span class="s">&quot;localhost&quot;</span>,
+  p_port: <span class="n">3128</span>
+)</code></pre>
+
+<h3>Result handling</h3>
+
+<p>The result of a <code><a href="Crest/Request.html">Crest::Request</a></code> and <code><a href="Crest/Resource.html">Crest::Resource</a></code> is a <code><a href="Crest/Response.html">Crest::Response</a></code> object.</p>
+
+<p>Response objects have several useful methods.</p>
+
+<ul><li><code>Response#body</code>: The response body as a string</li><li><code>Response#status_code</code>: The HTTP response code</li><li><code>Response#headers</code>: A hash of HTTP response headers</li><li><code>Response#cookies</code>: A hash of HTTP cookies set by the server</li><li><code>Response#request</code>: The <code><a href="Crest/Request.html">Crest::Request</a></code> object used to make the request</li><li><code>Response#http_client_res</code>: The <code>HTTP::Client::Response</code> object</li><li><code>Response#history</code>: A list of each response received in a redirection chain</li></ul>
+
+<h3>Exceptions</h3>
+
+<ul><li>for result codes between <code>200</code> and <code>207</code>, a <code><a href="Crest/Response.html">Crest::Response</a></code> will be returned</li><li>for result codes <code>301</code>, <code>302</code>, <code>303</code> or <code>307</code>, the redirection will be followed and the request transformed into a <code>GET</code></li><li>for other cases, a <code><a href="Crest/RequestFailed.html">Crest::RequestFailed</a></code> holding the Response will be raised</li><li>call <code>.response</code> on the exception to get the server's response</li></ul>
+
+<pre><code class="language-crystal"><span class="t">Crest</span>.get(<span class="s">&quot;http://httpbin.org/status/404&quot;</span>)
+<span class="c"># =&gt; HTTP status code 404: Not Found (Crest::NotFound)</span>
+
+<span class="k">begin</span>
+  <span class="t">Crest</span>.get(<span class="s">&quot;http://httpbin.org/status/404&quot;</span>)
+<span class="k">rescue</span> ex : <span class="t">Crest</span><span class="t">::</span><span class="t">NotFound</span>
+  puts ex.response
+<span class="k">end</span></code></pre>
+
+<p>To not raise exceptions but return the <code><a href="Crest/Response.html">Crest::Response</a></code> you can set <code>:handle_errors => false</code>.</p>
+
+<pre><code class="language-crystal">response <span class="o">=</span> <span class="t">Crest</span>.get(<span class="s">&quot;http://httpbin.org/status/404&quot;</span>, handle_errors: <span class="n">false</span>) <span class="k">do</span> <span class="o">|</span>resp<span class="o">|</span>
+  <span class="k">case</span> resp
+  <span class="k">when</span> .successful?
+    puts resp.body_io.gets_to_end
+  <span class="k">when</span> .client_error?
+    puts <span class="s">&quot;Client error&quot;</span>
+  <span class="k">when</span> .server_error?
+    puts <span class="s">&quot;Server error&quot;</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+<span class="c"># =&gt; Client error</span>
+
+response.status_code <span class="c"># =&gt; 404</span></code></pre>
+
+<p>But note that it may be more straightforward to use exceptions to handle different HTTP error response cases:</p>
+
+<pre><code class="language-crystal">response <span class="o">=</span> <span class="k">begin</span>
+  <span class="t">Crest</span>.get(<span class="s">&quot;http://httpbin.org/status/404&quot;</span>)
+<span class="k">rescue</span> ex : <span class="t">Crest</span><span class="t">::</span><span class="t">NotFound</span>
+  puts <span class="s">&quot;Not found&quot;</span>
+  ex.response
+<span class="k">rescue</span> ex : <span class="t">Crest</span><span class="t">::</span><span class="t">InternalServerError</span>
+  puts <span class="s">&quot;Internal server error&quot;</span>
+  ex.response
+<span class="k">end</span>
+<span class="c"># =&gt; Not found</span>
+
+response.status_code <span class="c"># =&gt; 404</span></code></pre>
+
+<h3>Streaming responses</h3>
+
+<p>Normally, when you use <code><a href="Crest.html">Crest</a></code>, <code><a href="Crest/Request.html">Crest::Request</a></code> or <code><a href="Crest/Resource.html">Crest::Resource</a></code> methods to retrieve data, the entire response is buffered in memory and returned as the response to the call.</p>
+
+<p>However, if you are retrieving a large amount of data, for example an iso, or any other large file, you may want to stream the response directly to disk rather than loading it in memory. If you have a very large file, it may become impossible to load it into memory.</p>
+
+<p>If you want to stream the data from the response to a file as it comes, rather than entirely in memory, you can pass a block to which you pass a additional logic, which you can use to stream directly to a file as each chunk is received.</p>
+
+<p>With a block, an <code><a href="Crest/Response.html">Crest::Response</a></code> body is returned and the response's body is available as an <code>IO</code> by invoking <code>Crest::Response#body_io</code>.</p>
+
+<p>The following is an example:</p>
+
+<pre><code class="language-crystal"><span class="t">Crest</span>.get(<span class="s">&quot;https://github.com/crystal-lang/crystal/archive/0.27.0.zip&quot;</span>) <span class="k">do</span> <span class="o">|</span>resp<span class="o">|</span>
+  filename <span class="o">=</span> resp.filename || <span class="s">&quot;crystal.zip&quot;</span>
+
+  <span class="t">File</span>.open(filename, <span class="s">&quot;w&quot;</span>) <span class="k">do</span> <span class="o">|</span>file<span class="o">|</span>
+    <span class="t">IO</span>.copy(resp.body_io, file)
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+
+<h3>Advanced Usage</h3>
+
+<p>This section covers some of <code>crest</code> more advanced features.</p>
+
+<h4>Multipart</h4>
+
+<p>Yeah, that's right! This does multipart sends for you!</p>
+
+<pre><code class="language-crystal">file <span class="o">=</span> <span class="t">File</span>.open(<span class="s">&quot;</span><span class="i">#{</span>__DIR__<span class="i">}</span><span class="s">/example.png&quot;</span>)
+<span class="t">Crest</span>.post(<span class="s">&quot;http://httpbin.org/post&quot;</span>, form: {<span class="n">:image</span> => file})</code></pre>
+
+<pre><code class="language-crystal">file <span class="o">=</span> <span class="t">File</span>.open(<span class="s">&quot;</span><span class="i">#{</span>__DIR__<span class="i">}</span><span class="s">/example.png&quot;</span>)
+resource <span class="o">=</span> <span class="t">Crest</span><span class="t">::</span><span class="t">Resource</span>.<span class="k">new</span>(<span class="s">&quot;https://httpbin.org&quot;</span>)
+response <span class="o">=</span> resource[<span class="s">&quot;/post&quot;</span>].post(form: {<span class="n">:image</span> => file})</code></pre>
+
+<h4>JSON payload</h4>
+
+<p><code>crest</code> does not speak JSON natively, so serialize your <em>form</em> to a string before passing it to <code>crest</code>.</p>
+
+<pre><code class="language-crystal"><span class="t">Crest</span>.post(
+  <span class="s">&quot;http://httpbin.org/post&quot;</span>,
+  headers: {<span class="s">&quot;Content-Type&quot;</span> => <span class="s">&quot;application/json&quot;</span>},
+  form: {<span class="n">:foo</span> => <span class="s">&quot;bar&quot;</span>}.to_json
+)</code></pre>
+
+<h4>Headers</h4>
+
+<p>Request headers can be set by passing a hash containing keys and values representing header names and values:</p>
+
+<pre><code class="language-crystal">response <span class="o">=</span> <span class="t">Crest</span>.get(
+  <span class="s">&quot;http://httpbin.org/bearer&quot;</span>,
+  headers: {<span class="s">&quot;Authorization&quot;</span> => <span class="s">&quot;Bearer cT0febFoD5lxAlNAXHo6g&quot;</span>}
+)
+response.headers
+<span class="c"># =&gt; {&quot;Authorization&quot; =&gt; [&quot;Bearer cT0febFoD5lxAlNAXHo6g&quot;]}</span></code></pre>
+
+<h4>Cookies</h4>
+
+<p><code>Request</code> and <code>Response</code> objects know about HTTP cookies, and will automatically extract and set headers for them as needed:</p>
+
+<pre><code class="language-crystal">response <span class="o">=</span> <span class="t">Crest</span>.get(
+  <span class="s">&quot;http://httpbin.org/cookies/set&quot;</span>,
+  params: {<span class="s">&quot;k1&quot;</span> => <span class="s">&quot;v1&quot;</span>, <span class="s">&quot;k2&quot;</span> => <span class="s">&quot;v2&quot;</span>}
+)
+response.cookies
+<span class="c"># =&gt; {&quot;k1&quot; =&gt; &quot;v1&quot;, &quot;k2&quot; =&gt; &quot;v2&quot;}</span></code></pre>
+
+<pre><code class="language-crystal">response <span class="o">=</span> <span class="t">Crest</span>.get(
+  <span class="s">&quot;http://httpbin.org/cookies&quot;</span>,
+  cookies: {<span class="s">&quot;k1&quot;</span> => <span class="s">&quot;v1&quot;</span>}
+)
+response.cookies
+<span class="c"># =&gt; {&quot;k1&quot; =&gt; &quot;v1&quot;}</span></code></pre>
+
+<h4>Basic authentication</h4>
+
+<p>For basic access authentication for an HTTP user agent you should to provide a <code>user</code> name and <code>password</code> when making a request.</p>
+
+<pre><code class="language-crystal"><span class="t">Crest</span>.get(
+  <span class="s">&quot;http://httpbin.org/basic-auth/user/passwd&quot;</span>,
+  user: <span class="s">&quot;user&quot;</span>,
+  password: <span class="s">&quot;passwd&quot;</span>
+)
+<span class="c"># curl -L --user user:passwd http://httpbin.org/basic-auth/user/passwd</span></code></pre>
+
+<h4>SSL/TLS support</h4>
+
+<p>If <code>tls</code> is given it will be used:</p>
+
+<pre><code class="language-crystal"><span class="t">Crest</span>.get(<span class="s">&quot;https://expired.badssl.com&quot;</span>, tls: <span class="t">OpenSSL</span><span class="t">::</span><span class="t">SSL</span><span class="t">::</span><span class="t">Context</span><span class="t">::</span><span class="t">Client</span>.insecure)</code></pre>
+
+<h4>Proxy</h4>
+
+<p>If you need to use a proxy, you can configure individual requests with the proxy host and port arguments to any request method:</p>
+
+<pre><code class="language-crystal"><span class="t">Crest</span>.get(
+  <span class="s">&quot;http://httpbin.org/ip&quot;</span>,
+  p_addr: <span class="s">&quot;localhost&quot;</span>,
+  p_port: <span class="n">3128</span>
+)</code></pre>
+
+<p>To use HTTP Basic Auth with your proxy, use next syntax:</p>
+
+<pre><code class="language-crystal"><span class="t">Crest</span>.get(
+  <span class="s">&quot;http://httpbin.org/ip&quot;</span>,
+  p_addr: <span class="s">&quot;localhost&quot;</span>,
+  p_port: <span class="n">3128</span>,
+  p_user: <span class="s">&quot;user&quot;</span>,
+  p_pass: <span class="s">&quot;qwerty&quot;</span>
+)</code></pre>
+
+<h4>Logging</h4>
+
+<blockquote><code>Logger</code> class is completely taken from <a href="https://github.com/icyleaf/halite" target="_blank">halite</a> shard.
+> Thanks <a href="https://github.com/icyleaf" target="_blank">icyleaf</a>!</blockquote>
+
+<p>By default, the <code><a href="Crest.html">Crest</a></code> does not enable logging. You can enable it per request by setting <code>logging: true</code>:</p>
+
+<pre><code class="language-crystal"><span class="t">Crest</span>.get(<span class="s">&quot;http://httpbin.org/get&quot;</span>, logging: <span class="n">true</span>)</code></pre>
+
+<h5>Filter sensitive information from logs with a regex matcher</h5>
+
+<pre><code class="language-crystal">resource <span class="o">=</span> <span class="t">Crest</span><span class="t">::</span><span class="t">Request</span>.get(<span class="s">&quot;http://httpbin.org/get&quot;</span>, params: {api_key => <span class="s">&quot;secret&quot;</span>}, logging: <span class="n">true</span>) <span class="k">do</span> <span class="o">|</span>request<span class="o">|</span>
+  request.logger.filter(<span class="s">/(api_key=)(\w+)/</span>, <span class="s">&quot;\\1[REMOVED]&quot;</span>)
+<span class="k">end</span>
+
+<span class="c"># =&gt; crest | 2018-07-04 14:49:49 | GET | http://httpbin.org/get?api_key=[REMOVED]</span></code></pre>
+
+<h5>Customize logger</h5>
+
+<p>You can create the custom logger by integration <code><a href="Crest/Logger.html">Crest::Logger</a></code> abstract class.
+Here has two methods must be implement: <code>Crest::Logger.request</code> and <code>Crest::Logger.response</code>.</p>
+
+<pre><code class="language-crystal"><span class="k">class</span> <span class="t">MyLogger</span> <span class="o">&lt;</span> <span class="t">Crest</span><span class="t">::</span><span class="t">Logger</span>
+  <span class="k">def</span> <span class="m">request</span>(request)
+    @logger.info <span class="s">&quot;&gt;&gt; | %s | %s&quot;</span> <span class="o">%</span> [request.method, request.url]
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">response</span>(response)
+    @logger.info <span class="s">&quot;&lt;&lt; | %s | %s&quot;</span> <span class="o">%</span> [response.status_code, response.url]
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="t">Crest</span>.get(<span class="s">&quot;http://httpbin.org/get&quot;</span>, logging: <span class="n">true</span>, logger: <span class="t">MyLogger</span>.<span class="k">new</span>)</code></pre>
+
+<h4>Redirection</h4>
+
+<p>By default, <code>crest</code> will follow HTTP 30x redirection requests.</p>
+
+<p>To disable automatic redirection, set <code>:max_redirects => 0</code>.</p>
+
+<pre><code class="language-crystal"><span class="t">Crest</span><span class="t">::</span><span class="t">Request</span>.execute(method: <span class="n">:get</span>, url: <span class="s">&quot;http://httpbin.org/redirect/1&quot;</span>, max_redirects: <span class="n">0</span>)
+<span class="c"># =&gt; Crest::Found: 302 Found</span></code></pre>
+
+<h4>Access HTTP::Client</h4>
+
+<p>You can access <code><a href="HTTP/Client.html">HTTP::Client</a></code> via the <code>http_client</code> instance method.</p>
+
+<p>This is usually used to set additional options (e.g. read timeout, authorization header etc.)</p>
+
+<pre><code class="language-crystal">client <span class="o">=</span> <span class="t">HTTP</span><span class="t">::</span><span class="t">Client</span>.<span class="k">new</span>(<span class="s">&quot;http://httpbin.org&quot;</span>)
+client.read_timeout <span class="o">=</span> <span class="n">1</span>.second
+
+<span class="k">begin</span>
+  <span class="t">Crest</span><span class="t">::</span><span class="t">Request</span>.<span class="k">new</span>(<span class="n">:get</span>,
+    <span class="s">&quot;http://httpbin.org/delay/10&quot;</span>,
+    http_client: client
+  )
+<span class="k">rescue</span> <span class="t">IO</span><span class="t">::</span><span class="t">Timeout</span>
+  puts <span class="s">&quot;Timeout!&quot;</span>
+<span class="k">end</span></code></pre>
+
+<pre><code class="language-crystal">client <span class="o">=</span> <span class="t">HTTP</span><span class="t">::</span><span class="t">Client</span>.<span class="k">new</span>(<span class="s">&quot;http://httpbin.org&quot;</span>)
+client.read_timeout <span class="o">=</span> <span class="n">1</span>.second
+
+<span class="k">begin</span>
+  resource <span class="o">=</span> <span class="t">Crest</span><span class="t">::</span><span class="t">Resource</span>.<span class="k">new</span>(<span class="s">&quot;http://httpbin.org&quot;</span>, http_client: client)
+  resource.get(<span class="s">&quot;/delay/10&quot;</span>)
+<span class="k">rescue</span> <span class="t">IO</span><span class="t">::</span><span class="t">Timeout</span>
+  puts <span class="s">&quot;Timeout!&quot;</span>
+<span class="k">end</span></code></pre>
+
+<h4>Convert Request object to cURL command</h4>
+
+<p>Use <code>to_curl</code> method on instance of <code><a href="Crest/Request.html">Crest::Request</a></code> to convert request to cURL command.</p>
+
+<pre><code class="language-crystal">request <span class="o">=</span> <span class="t">Crest</span><span class="t">::</span><span class="t">Request</span>.<span class="k">new</span>(
+  <span class="n">:post</span>,
+  <span class="s">&quot;http://httpbin.org/post&quot;</span>,
+  form: {<span class="s">&quot;title&quot;</span> => <span class="s">&quot;New Title&quot;</span>, <span class="s">&quot;author&quot;</span> => <span class="s">&quot;admin&quot;</span>}
+)
+request.to_curl
+<span class="c"># =&gt; curl -X POST http://httpbin.org/post -d &#39;title=New+Title&amp;author=admin&#39; -H &#39;Content-Type: application/x-www-form-urlencoded&#39;</span></code></pre>
+
+<pre><code class="language-crystal">request <span class="o">=</span> <span class="t">Crest</span><span class="t">::</span><span class="t">Request</span>.<span class="k">new</span>(
+  <span class="n">:get</span>,
+  <span class="s">&quot;http://httpbin.org/basic-auth/user/passwd&quot;</span>,
+  user: <span class="s">&quot;user&quot;</span>,
+  password: <span class="s">&quot;passwd&quot;</span>
+)
+request.to_curl
+<span class="c"># =&gt; curl -X GET http://httpbin.org/basic-auth/user/passwd --user user:passwd</span></code></pre>
+
+<p>Also you can directly use <code><a href="Crest/Curlify.html">Crest::Curlify</a></code> which accept instance of <code><a href="Crest/Request.html">Crest::Request</a></code></p>
+
+<pre><code class="language-crystal">request <span class="o">=</span> <span class="t">Crest</span><span class="t">::</span><span class="t">Request</span>.<span class="k">new</span>(<span class="n">:get</span>, <span class="s">&quot;http://httpbin.org&quot;</span>)
+<span class="t">Crest</span><span class="t">::</span><span class="t">Curlify</span>.<span class="k">new</span>(request).to_curl
+<span class="c"># =&gt; curl -X GET http://httpbin.org</span></code></pre>
+
+<h2>Development</h2>
+
+<p>Install dependencies:</p>
+
+<pre><code class="language-console">shards</code></pre>
+
+<p>To run test:</p>
+
+<pre><code class="language-console">make test</code></pre>
+
+<h3>Workbook</h3>
+
+<pre><code class="language-console">crystal play
+open http://localhost:8080</code></pre>
+
+<p>Then select the Workbook -> Requests from the menu.</p>
+
+<h2>Contributing</h2>
+
+<ol><li>Fork it ( https://github.com/mamantoha/crest/fork )</li><li>Create your feature branch (git checkout -b my-new-feature)</li><li>Commit your changes (git commit -am 'Add some feature')</li><li>Push to the branch (git push origin my-new-feature)</li><li>Create a new Pull Request</li></ol>
+
+<h2>Contributors</h2>
+
+<ul><li><a href="https://github.com/mamantoha" target="_blank">mamantoha</a> Anton Maminov - creator, maintainer</li><li><a href="https://github.com/icyleaf" target="_blank">icyleaf</a> Icyleaf Wang - logging support</li><li><a href="https://github.com/psikoz" target="_blank">psikoz</a> Logo design</li></ul>
+
+<h2>License</h2>
+
+<p>Copyright: 2017-2019 Anton Maminov (anton.maminov@gmail.com)</p>
+
+<p>This library is distributed under the MIT license. Please see the LICENSE file.</p>
+</div>
+</body>
+</html>
